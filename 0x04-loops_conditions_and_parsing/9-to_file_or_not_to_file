@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# This script is displaying "Holberton School" 10 times
+
+file="School"
+
+if [ -e "$file" ]
+then
+    echo "School file exists"
+    if [ -s "$file" ]
+    then
+	echo "School file is not empty"
+	if [ -f "$file" ]
+	then
+	    echo "School is a regular file"
+	fi
+    else
+        echo "School file is empty"
+	if [ -f "$file" ]
+	then
+            echo "School is a regular file"
+	fi
+    fi
+else
+    echo "School file does not exist"
+fi
