@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """
 Write a Python script that queries the Reddit API and returns the number of
